@@ -30,17 +30,23 @@ Graphviz安装说明：
 
 1.开始界面
 
-<img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117191409669.png" alt="image-20231117191409669" style="zoom: 67%;" />
+![image](https://github.com/coder-gx/LCLR/assets/105330548/9d9c6839-3547-49d0-941e-c786453cd4a3)
+
 
 2.点击文件，导入源代码并且导入文法，此外源代码可以自己在文本框输入
 
-![image-20231117191755853](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117191755853.png)<img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117191953947.png" alt="image-20231117191953947" style="zoom: 50%;" />
+![image](https://github.com/coder-gx/LCLR/assets/105330548/0de10f06-0b77-40ae-9230-4a309341b94e)
+![image](https://github.com/coder-gx/LCLR/assets/105330548/04f46684-000b-47e6-b1a6-729d4f1a6e93)
+
 
 3.点击编译->开始编译，可以选择是否继续生成语法DFA
 
-<img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117192130417.png" alt="image-20231117192130417" style="zoom: 67%;" />
+![image](https://github.com/coder-gx/LCLR/assets/105330548/ee43e576-b511-4dbb-8e7c-40c6f02cfe14)
+
 
 4.可以进行错误定位
 
-<img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117192644430.png" alt="image-20231117192644430" style="zoom: 50%;" /><img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20231117192804189.png" alt="image-20231117192804189" style="zoom:50%;" />
+![image](https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500)
+![image](https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156)
+
 
