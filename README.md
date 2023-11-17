@@ -37,8 +37,11 @@ Graphviz安装说明：
 
 2.点击文件，导入源代码并且导入文法，此外源代码可以自己在文本框输入
 
-![image](https://github.com/coder-gx/LCLR/assets/105330548/0de10f06-0b77-40ae-9230-4a309341b94e)
-![image](https://github.com/coder-gx/LCLR/assets/105330548/04f46684-000b-47e6-b1a6-729d4f1a6e93)
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/0de10f06-0b77-40ae-9230-4a309341b94e" alt="image1" width="50%">
+
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/04f46684-000b-47e6-b1a6-729d4f1a6e93" alt="image2" width="50%">
+
+
 
 
 3.点击编译->开始编译，可以选择是否继续生成语法DFA
