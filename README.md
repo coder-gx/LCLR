@@ -46,12 +46,14 @@ Graphviz安装说明：
 
 3.点击编译->开始编译，可以选择是否继续生成语法DFA
 
-![image](https://github.com/coder-gx/LCLR/assets/105330548/ee43e576-b511-4dbb-8e7c-40c6f02cfe14)
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/ee43e576-b511-4dbb-8e7c-40c6f02cfe14" alt="image" width="50%">
+
 
 
 4.可以进行错误定位
 
-![image](https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500)
-![image](https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156)
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500" alt="image1" width="50%">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156" alt="image2" width="50%">
+
 
 
