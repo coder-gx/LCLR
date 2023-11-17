@@ -17,7 +17,7 @@
 
 ## 运行
 
-1.将项目clone到本地，可以在Visual Studio 2022下可以直接运行
+1.将项目clone到本地，配置好VS+Qt的联合开发环境后(配置方法可以参考[这里](https://blog.csdn.net/MelyLenient/article/details/123854069?spm=1001.2014.3001.5506)),可以在Visual Studio 2022下可以直接运行
 
 2.由于在生成语法分析树图片的过程中使用到Graphviz，故如需生成语法分析树图片，需要提前安装Graphviz。
 Graphviz安装说明：
