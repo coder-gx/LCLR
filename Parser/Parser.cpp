@@ -35,7 +35,7 @@
 
 
 /**
-* @func:   Parser¹¹Ôìº¯Êı
+* @func:   Parseræ„é€ å‡½æ•°
 * @para:    
 * @return: 
 */
@@ -54,23 +54,23 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 	
 	
 	this->grammarFile = DEFAULT_GRAMMAR;
-	//this->lr1Grammar=new lr1Grammar(DEFAULT_GRAMMAR);//ÏÈ¼ÓÔØ³õÊ¼Óï·¨ÎÄ¼ş
-	this->codeFile = "";//codefileÎª¿Õ
+	//this->lr1Grammar=new lr1Grammar(DEFAULT_GRAMMAR);//å…ˆåŠ è½½åˆå§‹è¯­æ³•æ–‡ä»¶
+	this->codeFile = "";//codefileä¸ºç©º
 	this->pageShow = new Show;
 
-	//µ¼Èë´úÂë»òÕßÎÄ·¨
-	connect(this->ui->action_Code, &QAction::triggered, this, &Parser::loadCode);//¼ÇµÃÔÚÊä³ö´°¿Úprint½á¹û,×´Ì¬×ª»»
-	connect(this->ui->action_Grammar, &QAction::triggered, this, &Parser::loadGrammar);//Ğ´µ½my_grammar.txtÀï
+	//å¯¼å…¥ä»£ç æˆ–è€…æ–‡æ³•
+	connect(this->ui->action_Code, &QAction::triggered, this, &Parser::loadCode);//è®°å¾—åœ¨è¾“å‡ºçª—å£printç»“æœ,çŠ¶æ€è½¬æ¢
+	connect(this->ui->action_Grammar, &QAction::triggered, this, &Parser::loadGrammar);//å†™åˆ°my_grammar.txté‡Œ
 
-	//±àÒë»òÕßÖØÖÃ
-	connect(this->ui->action_Run, &QAction::triggered, this, &Parser::compile);//¼ÇµÃÔÚÊä³ö´°¿Úprint½á¹û,×´Ì¬×ª»»
-	connect(this->ui->action_Restart, &QAction::triggered, this, &Parser::restart);//Ğ´µ½my_grammar.txtÀï 
+	//ç¼–è¯‘æˆ–è€…é‡ç½®
+	connect(this->ui->action_Run, &QAction::triggered, this, &Parser::compile);//è®°å¾—åœ¨è¾“å‡ºçª—å£printç»“æœ,çŠ¶æ€è½¬æ¢
+	connect(this->ui->action_Restart, &QAction::triggered, this, &Parser::restart);//å†™åˆ°my_grammar.txté‡Œ 
 
-	//Õ¹Ê¾´Ê·¨dfa
+	//å±•ç¤ºè¯æ³•dfa
 	connect(this->ui->action_DFA, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->lexerFlag==0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else {
 			this->pageShow->showDFA();
@@ -79,11 +79,11 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 	});
 
 
-	// Õ¹Ê¾action goto±í
+	// å±•ç¤ºaction gotoè¡¨
 	connect(this->ui->action_Table, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->compileFlag == 0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else {
 			this->pageShow->showTable();
@@ -92,11 +92,11 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 		});
 
 
-	// Õ¹Ê¾´Ê·¨token
+	// å±•ç¤ºè¯æ³•token
 	connect(this->ui->action_Token, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->lexerFlag==0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else {
 			this->pageShow->showToken();
@@ -104,11 +104,11 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 		}
 	});
 
-	// Õ¹Ê¾¹æÔ¼¹ı³Ì
+	// å±•ç¤ºè§„çº¦è¿‡ç¨‹
 	connect(this->ui->action_Process, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->compileFlag==0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else {
 			this->pageShow->showProcess();
@@ -117,14 +117,14 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 	});
 
 	
-	// Õ¹Ê¾Óï·¨·ÖÎöÊ÷
+	// å±•ç¤ºè¯­æ³•åˆ†ææ ‘
 	connect(this->ui->action_Tree, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->compileFlag==0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else if (this->treeFlag==0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈ°²×°graphviz");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®‰è£…graphviz");
 		}
 		else {
 			this->pageShow->showTree();
@@ -132,14 +132,14 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 		}
 	});
 
-	// Õ¹Ê¾Óï·¨·ÖÎöÊ÷
+	// å±•ç¤ºè¯­æ³•åˆ†ææ ‘
 	connect(this->ui->actionLR_1_DFA, &QAction::triggered, [=]() {
-		// ÏÔÊ¾Õ¾µãĞŞ¸ÄÒ³Ãæ Õ¹Ê¾Ò³Ãæ
+		// æ˜¾ç¤ºç«™ç‚¹ä¿®æ”¹é¡µé¢ å±•ç¤ºé¡µé¢
 		if (this->compileFlag == 0) {
-			QMessageBox::critical(this, "´íÎó", "ÇëÏÈÍê³É±àÒë");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯·å…ˆå®Œæˆç¼–è¯‘");
 		}
 		else if (this->dfaFlag == 0) {
-			QMessageBox::critical(this, "´íÎó", "Óï·¨DFA»¹Î´Éú³É");
+			QMessageBox::critical(this, "é”™è¯¯", "è¯­æ³•DFAè¿˜æœªç”Ÿæˆ");
 		}
 		else {
 				this->pageShow->showParseDFA();
@@ -149,9 +149,9 @@ Parser::Parser(QWidget *parent): QMainWindow(parent)
 	
 
 	QString startTip = "*************************\n";
-	       startTip += "LR(1)´Ê·¨Óï·¨·ÖÎöÆ÷Æô¶¯\n";
+	       startTip += "LR(1)è¯æ³•è¯­æ³•åˆ†æå™¨å¯åŠ¨\n";
 	       startTip += "*************************\n";
-	startTip += "Çëµ¼ÈëÎÄ·¨ÎÄ¼şºÍ²¢ÊäÈë/µ¼ÈëÔ´´úÂë";
+	startTip += "è¯·å¯¼å…¥æ–‡æ³•æ–‡ä»¶å’Œå¹¶è¾“å…¥/å¯¼å…¥æºä»£ç ";
 	
 
 	this->ui->textBrowser->setText(startTip);
@@ -163,43 +163,43 @@ Parser::~Parser()
 }
 
 /**
-* @func:   µ¼ÈëÎÄ·¨
+* @func:   å¯¼å…¥æ–‡æ³•
 * @para:   
 * @return: 
 */
 void Parser::loadGrammar()
 {
-	QString fileName = QFileDialog::getOpenFileName(this, "µ¼ÈëÎÄ¼ş", ".", "files(*.txt)");
+	QString fileName = QFileDialog::getOpenFileName(this, "å¯¼å…¥æ–‡ä»¶", ".", "files(*.txt)");
 	if (!fileName.isEmpty()) {
 		this->grammarFile=fileName;
 		this->loadGrammarFlag = 1;
-		this->ui->textBrowser->append("\nÎÄ·¨ÎÄ¼şµ¼Èë³É¹¦");
+		this->ui->textBrowser->append("\næ–‡æ³•æ–‡ä»¶å¯¼å…¥æˆåŠŸ");
 	}
 	else {
-		this->ui->textBrowser->append("\n¿ÕÎÄ¼ş£¬µ¼ÈëÊ§°Ü");
-		QMessageBox::critical(this, "´íÎó", "µ¼ÈëÎÄ·¨ÎÄ¼şÊ§°Ü");
+		this->ui->textBrowser->append("\nç©ºæ–‡ä»¶ï¼Œå¯¼å…¥å¤±è´¥");
+		QMessageBox::critical(this, "é”™è¯¯", "å¯¼å…¥æ–‡æ³•æ–‡ä»¶å¤±è´¥");
 	}
 }
 
 /**
-* @func:   µ¼Èë´úÂëµ½ÎÄ±¾¿òÖĞ
+* @func:   å¯¼å…¥ä»£ç åˆ°æ–‡æœ¬æ¡†ä¸­
 * @para:   
 * @return:
 */
 void Parser::loadCode()
 {
-	QString fileName = QFileDialog::getOpenFileName(this, "µ¼ÈëÎÄ¼ş", ".", "files(*.txt *.cpp *.c)");
+	QString fileName = QFileDialog::getOpenFileName(this, "å¯¼å…¥æ–‡ä»¶", ".", "files(*.txt *.cpp *.c)");
 	if (!fileName.isEmpty()) {
 		this->codeFile = fileName;
 		fstream fcode;
 		fcode.open((string)fileName.toLocal8Bit());
 		if (fcode.is_open() == 0) {
-			QString tip = "\nÔ´ÂëÎÄ¼ş" + fileName + "ÎŞ·¨´ò¿ª";
+			QString tip = "\næºç æ–‡ä»¶" + fileName + "æ— æ³•æ‰“å¼€";
 			this->ui->textBrowser->append(tip);
-			QMessageBox::critical(this, "´íÎó", "Ô´ÂëÎÄ¼şÎŞ·¨´ò¿ª");
+			QMessageBox::critical(this, "é”™è¯¯", "æºç æ–‡ä»¶æ— æ³•æ‰“å¼€");
 			return;
 		}
-		//Çå¿Õ
+		//æ¸…ç©º
 		this->ui->textEdit->clear();
 		while (!fcode.eof() && fcode) {
 			string line;
@@ -207,16 +207,16 @@ void Parser::loadCode()
 			this->ui->textEdit->append(QString::fromLocal8Bit(line.c_str()));
 		}
 		fcode.close();
-		this->ui->textBrowser->append("\n³É¹¦µ¼ÈëÔ´ÂëÎÄ¼ş");
+		this->ui->textBrowser->append("\næˆåŠŸå¯¼å…¥æºç æ–‡ä»¶");
 	}
 	else {
-		this->ui->textBrowser->append("\n¿ÕÎÄ¼ş£¬µ¼ÈëÊ§°Ü");
-		QMessageBox::critical(this, "´íÎó", "µ¼ÈëÔ´´úÂëÎÄ¼şÊ§°Ü");
+		this->ui->textBrowser->append("\nç©ºæ–‡ä»¶ï¼Œå¯¼å…¥å¤±è´¥");
+		QMessageBox::critical(this, "é”™è¯¯", "å¯¼å…¥æºä»£ç æ–‡ä»¶å¤±è´¥");
 	}
 }
 
 /**
-* @func:   ¿ªÊ¼±àÒë
+* @func:   å¼€å§‹ç¼–è¯‘
 * @para:   
 * @return: 
 */
@@ -228,55 +228,55 @@ void Parser::compile()
 	if (this->errorFlag == 1) {
 		this->showErrorLine(this->errorLine, Qt::white);
 	}
-	//ÎÄ·¨ÎÄ¼ş
+	//æ–‡æ³•æ–‡ä»¶
 	if (this->loadGrammarFlag == 0) {
-		if (QMessageBox::No == QMessageBox::question(this, "¾¯¸æ", "µ±Ç°»¹Ã»ÓĞµ¼ÈëÎÄ·¨ÎÄ¼ş£¬È·¶¨Ê¹ÓÃÄ¬ÈÏÎÄ¼ş" + QString::fromLocal8Bit(DEFAULT_GRAMMAR), QMessageBox::Yes | QMessageBox::No)) {
+		if (QMessageBox::No == QMessageBox::question(this, "è­¦å‘Š", "å½“å‰è¿˜æ²¡æœ‰å¯¼å…¥æ–‡æ³•æ–‡ä»¶ï¼Œç¡®å®šä½¿ç”¨é»˜è®¤æ–‡ä»¶" + QString::fromLocal8Bit(DEFAULT_GRAMMAR), QMessageBox::Yes | QMessageBox::No)) {
 			return;
 		}
 	}
-	//¶ÁÎÄ±¾ÊäÈë¿òµÄÄÚÈİ
+	//è¯»æ–‡æœ¬è¾“å…¥æ¡†çš„å†…å®¹
 	QString codeInput = this->ui->textEdit->toPlainText();
 	if (codeInput.size() > 0) {
-		// Êı¾İÌáÈ¡
+		// æ•°æ®æå–
 		QFile file(CODE_FILE);
 		if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
 			QTextStream out(&file);
 			out << codeInput;
 			file.close();
-			this->ui->textBrowser->append("\nÔ´´úÂëÒÑĞ´Èëµ½ÎÄ¼şInput_Code.txtÖĞ");
+			this->ui->textBrowser->append("\næºä»£ç å·²å†™å…¥åˆ°æ–‡ä»¶Input_Code.txtä¸­");
 		}
 		else {
-			QMessageBox::warning(this, "¾¯¸æ", "´úÂë±£´æÊ§°Ü");
+			QMessageBox::warning(this, "è­¦å‘Š", "ä»£ç ä¿å­˜å¤±è´¥");
 		}
 	}
 	else {
-		this->ui->textBrowser->append("\nµ±Ç°Ã»ÓĞµ¼Èë»òÕßÊäÈëÔ´´úÂë");
-		QMessageBox::critical(this, "´íÎó", "Ã»ÓĞµ¼Èë»òÊäÈë´úÂë");
+		this->ui->textBrowser->append("\nå½“å‰æ²¡æœ‰å¯¼å…¥æˆ–è€…è¾“å…¥æºä»£ç ");
+		QMessageBox::critical(this, "é”™è¯¯", "æ²¡æœ‰å¯¼å…¥æˆ–è¾“å…¥ä»£ç ");
 		return;
 	}
 
 
-	//´Ê·¨·ÖÎö
-	QString tip = "ÕıÔÚ½øĞĞ´Ê·¨·ÖÎö£¬ÇëÉÔºó...\n";
+	//è¯æ³•åˆ†æ
+	QString tip = "æ­£åœ¨è¿›è¡Œè¯æ³•åˆ†æï¼Œè¯·ç¨å...\n";
 	this->ui->textBrowser->append(tip);
 	this->my_lexer = new lexer;
 
 	int lexer_error=this->my_lexer->lexicalAnalysis(CODE_FILE);
 	if (lexer_error == SUCCESS) {
-		tip = "´Ê·¨·ÖÎöÎŞÎó\n";
+		tip = "è¯æ³•åˆ†ææ— è¯¯\n";
 	}
 	else if(lexer_error==LEXICAL_ANALYSIS_ERROR) {
-		tip = "´Ê·¨·ÖÎö´íÎó,´íÎóÈÕÖ¾ÎÄ¼şÄÚÈİÈçÏÂ\n";
+		tip = "è¯æ³•åˆ†æé”™è¯¯,é”™è¯¯æ—¥å¿—æ–‡ä»¶å†…å®¹å¦‚ä¸‹\n";
 		this->ui->textBrowser->append(tip);
 		this->showErrorLine(this->my_lexer->error_line,Qt::red);
 		this->errorLine = this->my_lexer->error_line;
 		this->errorFlag = 1;
-		//°Ñ¼ÇÂ¼´íÎóµÄÎÄ¼ş¶Á³öÀ´
+		//æŠŠè®°å½•é”™è¯¯çš„æ–‡ä»¶è¯»å‡ºæ¥
 		QFile file(ERROR_LIST_FILE);
 		if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
 			QTextStream in(&file);
 
-			// ¶ÁÈ¡ÎÄ¼şÄÚÈİ²¢Ğ´Èë TextBrowser
+			// è¯»å–æ–‡ä»¶å†…å®¹å¹¶å†™å…¥ TextBrowser
 			this->ui->textBrowser->append(in.readAll());
 			file.close();
 		}
@@ -284,21 +284,21 @@ void Parser::compile()
 			this->ui->textBrowser->append("Error: Unable to open the file.");
 			return;
 		}
-		QMessageBox::critical(this, "´íÎó", "´Ê·¨·ÖÎöÊ§°Ü£¬±àÒëÊ§°Ü!");
-		tip += "±àÒëÊ§°Ü!!!";
+		QMessageBox::critical(this, "é”™è¯¯", "è¯æ³•åˆ†æå¤±è´¥ï¼Œç¼–è¯‘å¤±è´¥!");
+		tip += "ç¼–è¯‘å¤±è´¥!!!";
 		return ;
 	}
 	else {
-		this->ui->textBrowser->append("\nÔ´´úÂëÎÄ¼şµ¼ÈëÊ§°Ü");
-		QMessageBox::critical(this, "´íÎó", "µ¼ÈëÔ´´úÂëÎÄ¼şÊ§°Ü");
+		this->ui->textBrowser->append("\næºä»£ç æ–‡ä»¶å¯¼å…¥å¤±è´¥");
+		QMessageBox::critical(this, "é”™è¯¯", "å¯¼å…¥æºä»£ç æ–‡ä»¶å¤±è´¥");
 		return;
 	}
-	tip += "´Ê·¨·ÖÎöÒÑ½áÊø£¬¿ÉÔÚµ±Ç°Ä¿Â¼ÏÂ²é¿´\n´Ê·¨·ÖÎö½á¹ûÎÄ¼şToken_List.txt\n";
+	tip += "è¯æ³•åˆ†æå·²ç»“æŸï¼Œå¯åœ¨å½“å‰ç›®å½•ä¸‹æŸ¥çœ‹\nè¯æ³•åˆ†æç»“æœæ–‡ä»¶Token_List.txt\n";
 	this->ui->textBrowser->append(tip);
 	this->lexerFlag = 1;
 
-	//ÎÄ·¨·ÖÎö
-	tip = "ÕıÔÚ¶ÁÈ¡ÎÄ·¨ÎÄ¼ş£¬ÇëÉÔºó...\n";
+	//æ–‡æ³•åˆ†æ
+	tip = "æ­£åœ¨è¯»å–æ–‡æ³•æ–‡ä»¶ï¼Œè¯·ç¨å...\n";
 	this->ui->textBrowser->append(tip);
 	
 
@@ -307,17 +307,17 @@ void Parser::compile()
 	int grammar_error= this->my_lr1Grammar->ReadGrammar((string)this->grammarFile.toLocal8Bit());
 
 	if (grammar_error == SUCCESS) {
-		tip = "ÎÄ·¨ÎÄ¼şÎŞÎó\n";
+		tip = "æ–‡æ³•æ–‡ä»¶æ— è¯¯\n";
 		this->ui->textBrowser->append(tip);
 	}
 	else if (grammar_error == GRAMMAR_ERROR) {
-		tip = "ÎÄ·¨´íÎó,´íÎóÈÕÖ¾ÎÄ¼şÄÚÈİÈçÏÂ\n";
+		tip = "æ–‡æ³•é”™è¯¯,é”™è¯¯æ—¥å¿—æ–‡ä»¶å†…å®¹å¦‚ä¸‹\n";
 		this->ui->textBrowser->append(tip);
-		//°Ñ¼ÇÂ¼´íÎóµÄÎÄ¼ş¶Á³öÀ´
+		//æŠŠè®°å½•é”™è¯¯çš„æ–‡ä»¶è¯»å‡ºæ¥
 		QFile file(GRAMMAR_ERROR_FILE);
 		if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
 			QTextStream in(&file);
-			// ¶ÁÈ¡ÎÄ¼şÄÚÈİ²¢Ğ´Èë TextBrowser
+			// è¯»å–æ–‡ä»¶å†…å®¹å¹¶å†™å…¥ TextBrowser
 			this->ui->textBrowser->append(in.readAll());
 			file.close();
 		}
@@ -325,19 +325,19 @@ void Parser::compile()
 			this->ui->textBrowser->append("Error: Unable to open the file.");
 			return;
 		}
-		QMessageBox::critical(this, "´íÎó", "ÎÄ·¨´íÎó!");
-		tip = "±àÒëÊ§°Ü!!!";
+		QMessageBox::critical(this, "é”™è¯¯", "æ–‡æ³•é”™è¯¯!");
+		tip = "ç¼–è¯‘å¤±è´¥!!!";
 		this->ui->textBrowser->append(tip);
 		return;
 	}
 	else if (grammar_error == GRAMMAR_FILE_OPEN_ERROR) {
-		this->ui->textBrowser->append("\nÎÄ·¨´íÎóĞÅÏ¢¼ÇÂ¼Ê§°Ü");
-		QMessageBox::warning(this, "´íÎó", "ÎÄ·¨´íÎóĞÅÏ¢¼ÇÂ¼Ê§°Ü");
+		this->ui->textBrowser->append("\næ–‡æ³•é”™è¯¯ä¿¡æ¯è®°å½•å¤±è´¥");
+		QMessageBox::warning(this, "é”™è¯¯", "æ–‡æ³•é”™è¯¯ä¿¡æ¯è®°å½•å¤±è´¥");
 		return;
 	}
 	else {
-		this->ui->textBrowser->append("\nÎÄ·¨ÎÄ¼ş¶ÁÈëÊ§°Ü");
-		QMessageBox::critical(this, "´íÎó", "¶ÁÈëÎÄ·¨ÎÄ¼şÊ§°Ü");
+		this->ui->textBrowser->append("\næ–‡æ³•æ–‡ä»¶è¯»å…¥å¤±è´¥");
+		QMessageBox::critical(this, "é”™è¯¯", "è¯»å…¥æ–‡æ³•æ–‡ä»¶å¤±è´¥");
 		return;
 	}
 	
@@ -345,76 +345,76 @@ void Parser::compile()
 	this->my_lr1Grammar->generateDFA();
 	this->my_lr1Grammar->generateACTION_GOTO();
 	this->my_lr1Grammar->printACTION_GOTO();
-	tip = "ÎÄ·¨ÒÑ¶ÁÈë£¬¿ÉÔÚµ±Ç°Ä¿Â¼ÏÂ²é¿´£º\n1.ÍØ¹ãÎÄ·¨Extended_Grammar.txt\n2.ÎÄ·¨µÄFisrt¼¯First_Set.txt\n3.Action Goto±íTables.csv";
+	tip = "æ–‡æ³•å·²è¯»å…¥ï¼Œå¯åœ¨å½“å‰ç›®å½•ä¸‹æŸ¥çœ‹ï¼š\n1.æ‹“å¹¿æ–‡æ³•Extended_Grammar.txt\n2.æ–‡æ³•çš„Fisrté›†First_Set.txt\n3.Action Gotoè¡¨Tables.csv";
 	this->ui->textBrowser->append(tip);
 	
-	tip = "\nÕıÔÚ½øĞĞÓï·¨·ÖÎö£¬ÇëÉÔºó...\n";
+	tip = "\næ­£åœ¨è¿›è¡Œè¯­æ³•åˆ†æï¼Œè¯·ç¨å...\n";
 	this->ui->textBrowser->append(tip);
 
 	int lr1_error = my_lr1Grammar->reduction(my_lexer->lexer_res);
 
 	if (lr1_error == ACTION_ERROR) {
-		tip = "ÎÄ·¨·ÖÎö¹ı³ÌÖĞACTION±í²éÕÒ³ö´í\n";
+		tip = "æ–‡æ³•åˆ†æè¿‡ç¨‹ä¸­ACTIONè¡¨æŸ¥æ‰¾å‡ºé”™\n";
 		this->ui->textBrowser->append(tip);
-		QMessageBox::critical(this, "´íÎó", "ACTION±í²éÕÒÊ§°Ü");
+		QMessageBox::critical(this, "é”™è¯¯", "ACTIONè¡¨æŸ¥æ‰¾å¤±è´¥");
 	}
 	else if(lr1_error==GOTO_ERROR) {
-		tip = "ÎÄ·¨·ÖÎö¹ı³ÌÖĞGOTO±í²éÕÒ³ö´í\n";
+		tip = "æ–‡æ³•åˆ†æè¿‡ç¨‹ä¸­GOTOè¡¨æŸ¥æ‰¾å‡ºé”™\n";
 		this->ui->textBrowser->append(tip);
-		QMessageBox::critical(this, "´íÎó", "GOTO±í²éÕÒÊ§°Ü");
+		QMessageBox::critical(this, "é”™è¯¯", "GOTOè¡¨æŸ¥æ‰¾å¤±è´¥");
 	}
 	else if (lr1_error==REDUCTION_PROCESS_FILE_OPEN_ERROR) {
-		this->ui->textBrowser->append("\n¹æÔ¼¹ı³Ì¼ÇÂ¼Ê§°Ü");
-		QMessageBox::warning(this, "¾¯¸æ", "¹æÔ¼¹ı³Ì¼ÇÂ¼Ê§°Ü");
+		this->ui->textBrowser->append("\nè§„çº¦è¿‡ç¨‹è®°å½•å¤±è´¥");
+		QMessageBox::warning(this, "è­¦å‘Š", "è§„çº¦è¿‡ç¨‹è®°å½•å¤±è´¥");
 		return;
 	}
 	else if (lr1_error == PARSE_ERROR_FILE_OPEN_ERROR) {
-		this->ui->textBrowser->append("\nÓï·¨·ÖÎö´íÎó¼ÇÂ¼Ê§°Ü");
-		QMessageBox::warning(this, "¾¯¸æ", "Óï·¨·ÖÎö´íÎó¼ÇÂ¼Ê§°Ü");
+		this->ui->textBrowser->append("\nè¯­æ³•åˆ†æé”™è¯¯è®°å½•å¤±è´¥");
+		QMessageBox::warning(this, "è­¦å‘Š", "è¯­æ³•åˆ†æé”™è¯¯è®°å½•å¤±è´¥");
 		return;
 	}
 	else {
-		tip = "Óï·¨·ÖÎöÒÑ½áÊø£¬¿ÉÔÚµ±Ç°Ä¿Â¼ÏÂ²é¿´£º\nÎÄ·¨¹éÔ¼¹ı³ÌÎÄ¼şReduction_Process.txt\n\n";
-		tip += "±àÒë³É¹¦£¡£¡£¡\n";
+		tip = "è¯­æ³•åˆ†æå·²ç»“æŸï¼Œå¯åœ¨å½“å‰ç›®å½•ä¸‹æŸ¥çœ‹ï¼š\næ–‡æ³•å½’çº¦è¿‡ç¨‹æ–‡ä»¶Reduction_Process.txt\n\n";
+		tip += "ç¼–è¯‘æˆåŠŸï¼ï¼ï¼\n";
 		this->ui->textBrowser->append(tip);
 		this->compileFlag = 1;
 		this->errorFlag =0;
 
 		if (lr1_error == TREE_DOT_FILE_OPEN_ERROR) {
-			this->ui->textBrowser->append("\nÓï·¨Ê÷±£´æÊ§°Ü");
-			QMessageBox::warning(this, "¾¯¸æ", "Óï·¨Ê÷±£´æÊ§°Ü");
+			this->ui->textBrowser->append("\nè¯­æ³•æ ‘ä¿å­˜å¤±è´¥");
+			QMessageBox::warning(this, "è­¦å‘Š", "è¯­æ³•æ ‘ä¿å­˜å¤±è´¥");
 			return;
 		}
 		else {
 			const char* command = "dot --version";
-			// Ê¹ÓÃ popen Ö´ĞĞÃüÁî²¢»ñÈ¡Êä³ö
+			// ä½¿ç”¨ popen æ‰§è¡Œå‘½ä»¤å¹¶è·å–è¾“å‡º
 			FILE* fp = _popen(command, "r");
 			if (fp == nullptr) {
-				QMessageBox::warning(this, "¾¯¸æ", "Ã»ÓĞ°²×°graphviz,ÎŞ·¨Éú³ÉÓï·¨·ÖÎöÊ÷");
+				QMessageBox::warning(this, "è­¦å‘Š", "æ²¡æœ‰å®‰è£…graphviz,æ— æ³•ç”Ÿæˆè¯­æ³•åˆ†ææ ‘");
 				return;
 			}
 			_pclose(fp);
 
 			system("dot -Tpng results/Parse_Tree.dot -o picture/Parse_Tree.png");
-			tip = "Óï·¨·ÖÎöÊ÷ÒÑÉú³É£¬¿ÉÔÚµ±Ç°Ä¿Â¼ÏÂ²é¿´Parse_Tree.png¡£";
+			tip = "è¯­æ³•åˆ†ææ ‘å·²ç”Ÿæˆï¼Œå¯åœ¨å½“å‰ç›®å½•ä¸‹æŸ¥çœ‹Parse_Tree.pngã€‚";
 			this->ui->textBrowser->append(tip);
 			this->treeFlag = 1;
 		}
 			
 		if (my_lr1Grammar->printParseDFA() != SUCCESS) {
-			this->ui->textBrowser->append("\nLR(1)ÎÄ·¨DFA±£´æÊ§°Ü");
-			QMessageBox::warning(this, "¾¯¸æ", "LR(1)ÎÄ·¨DFA±£´æÊ§°Ü");
+			this->ui->textBrowser->append("\nLR(1)æ–‡æ³•DFAä¿å­˜å¤±è´¥");
+			QMessageBox::warning(this, "è­¦å‘Š", "LR(1)æ–‡æ³•DFAä¿å­˜å¤±è´¥");
 		}
 		else {
 			
-			if (QMessageBox::Yes == QMessageBox::question(this, "ÌáÊ¾", "Óï·¨DFAÉú³ÉÊ±¼ä½Ï³¤£¬È·¶¨¼ÌĞøÉú³É£¿", QMessageBox::Yes | QMessageBox::No))
+			if (QMessageBox::Yes == QMessageBox::question(this, "æç¤º", "è¯­æ³•DFAç”Ÿæˆæ—¶é—´è¾ƒé•¿ï¼Œç¡®å®šç»§ç»­ç”Ÿæˆï¼Ÿ", QMessageBox::Yes | QMessageBox::No))
 			{
 
-				tip = "ÕıÔÚÉú³ÉDFA";
+				tip = "æ­£åœ¨ç”ŸæˆDFA";
 				this->ui->textBrowser->append(tip);
 				system("dot -Tpng results/Parse_DFA.dot -o picture/Parse_DFA.png");
 
-				tip = "Óï·¨·ÖÎöDFAÒÑÉú³É£¬¿ÉÔÚµ±Ç°Ä¿Â¼ÏÂ²é¿´Parse_DFA.png¡£";
+				tip = "è¯­æ³•åˆ†æDFAå·²ç”Ÿæˆï¼Œå¯åœ¨å½“å‰ç›®å½•ä¸‹æŸ¥çœ‹Parse_DFA.pngã€‚";
 				this->ui->textBrowser->append(tip);
 				this->dfaFlag = 1;
 			}
@@ -425,10 +425,10 @@ void Parser::compile()
 		this->showErrorLine(this->my_lr1Grammar->error_line,Qt::red);
 		this->errorLine = this->my_lr1Grammar->error_line;
 		this->errorFlag = 1;
-		QFile file("Parse_Error.txt");
+		QFile file(PARSE_ERROR_FILE);
 		if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
 			QTextStream in(&file);
-			// ¶ÁÈ¡ÎÄ¼şÄÚÈİ²¢Ğ´Èë TextBrowser
+			// è¯»å–æ–‡ä»¶å†…å®¹å¹¶å†™å…¥ TextBrowser
 			this->ui->textBrowser->append(in.readAll());
 			file.close();
 		}
@@ -436,7 +436,7 @@ void Parser::compile()
 			this->ui->textBrowser->setPlainText("Error: Unable to open the file.");
 			return;
 		}
-		tip = "±àÒëÊ§°Ü!!!";
+		tip = "ç¼–è¯‘å¤±è´¥!!!";
 		this->ui->textBrowser->append(tip);
 		return;
 	}
@@ -445,16 +445,16 @@ void Parser::compile()
 }
 
 /**
-* @func:   ÖØÆô
+* @func:   é‡å¯
 * @para:   
 * @return: 
 */
 void Parser::restart()
 {
-	if (QMessageBox::No == QMessageBox::question(this, "¾¯¸æ", "È·¶¨ÖØÆô£¿", QMessageBox::Yes | QMessageBox::No)) {
+	if (QMessageBox::No == QMessageBox::question(this, "è­¦å‘Š", "ç¡®å®šé‡å¯ï¼Ÿ", QMessageBox::Yes | QMessageBox::No)) {
 		return;
 	}
-	//Çå¿Õ
+	//æ¸…ç©º
 	this->ui->textBrowser->clear();
 	this->ui->textEdit->clear();
 	this->grammarFile = DEFAULT_GRAMMAR;
@@ -467,9 +467,9 @@ void Parser::restart()
 	this->dfaFlag = 0;
 
 	QString startTip = "*************************\n";
-	startTip += "LR(1)´Ê·¨Óï·¨·ÖÎöÆ÷Æô¶¯\n";
+	startTip += "LR(1)è¯æ³•è¯­æ³•åˆ†æå™¨å¯åŠ¨\n";
 	startTip += "*************************\n";
-	startTip += "Çëµ¼ÈëÎÄ·¨ÎÄ¼şºÍ²¢ÊäÈë/µ¼ÈëÔ´´úÂë";
+	startTip += "è¯·å¯¼å…¥æ–‡æ³•æ–‡ä»¶å’Œå¹¶è¾“å…¥/å¯¼å…¥æºä»£ç ";
 
 
 	this->ui->textBrowser->setText(startTip);
@@ -477,15 +477,15 @@ void Parser::restart()
 
 
 /**
-* @func:   Õ¹Ê¾´íÎóµÄÎ»ÖÃ
-* @para:   int n ĞĞÊı
-*          QColor colorÒªÕ¹Ê¾µÄÑÕÉ«
+* @func:   å±•ç¤ºé”™è¯¯çš„ä½ç½®
+* @para:   int n è¡Œæ•°
+*          QColor colorè¦å±•ç¤ºçš„é¢œè‰²
 * @return: 
 */
 void Parser::showErrorLine(int n, QColor color)
 {
 
-	// »ñÈ¡µÚÈıĞĞµÄÎ»ÖÃ
+	// è·å–ç¬¬ä¸‰è¡Œçš„ä½ç½®
 	QTextCursor cursor = this->ui->textEdit->textCursor();
 	cursor.movePosition(QTextCursor::Start);
 	for (int i = 0; i < n-1; ++i) {
@@ -495,6 +495,6 @@ void Parser::showErrorLine(int n, QColor color)
 	QTextBlockFormat blockFormat = cursor.blockFormat();
 	blockFormat.setBackground(color);
 
-	// Ó¦ÓÃ¸ñÊ½µ½ÕûĞĞ
+	// åº”ç”¨æ ¼å¼åˆ°æ•´è¡Œ
 	cursor.setBlockFormat(blockFormat);
 }
