@@ -55,5 +55,7 @@ Graphviz安装说明：
 <img src="https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500" alt="image1" style="width: 50%; height: 50%;">
 <img src="https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156" alt="image2" style="width: 50%; height: 50%;">
 
+5.可以在“词法->Token”查看分割后的token以及“词法->DFA”查看分割token的DFA图
 
+6.可以在“语法” 查看ACTION GOTO Table,规约过程,语法树和LR(1)的DFA
 
