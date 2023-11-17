@@ -8,29 +8,29 @@
 #include<qlayout.h>
 
 
-//lr1Ïà¹ØÎÄ¼şµØÖ·
-#define Table_FILE  "results/ACTION_GOTO_Table.csv" //Êä³ö±íµØÖ·
-#define REDUCTION_PROCESS_FILE "results/Reduction_Process.txt" //Êä³ö¹éÔ¼µØÖ·
-#define TREE_DOT_FILE  "results/Parse_Tree.dot"   //»­Í¼dotÎÄ¼şµØÖ·
-#define TREE_PNG_FILE   "picture/Parse_Tree.png" //Óï·¨Ê÷Í¼Æ¬µØÖ·
+//lr1ç›¸å…³æ–‡ä»¶åœ°å€
+#define Table_FILE  "results/ACTION_GOTO_Table.csv" //è¾“å‡ºè¡¨åœ°å€
+#define REDUCTION_PROCESS_FILE "results/Reduction_Process.txt" //è¾“å‡ºå½’çº¦åœ°å€
+#define TREE_DOT_FILE  "results/Parse_Tree.dot"   //ç”»å›¾dotæ–‡ä»¶åœ°å€
+#define TREE_PNG_FILE   "picture/Parse_Tree.png" //è¯­æ³•æ ‘å›¾ç‰‡åœ°å€
 #define PARSE_ERROR_FILE "error_log/Parse_Error.txt"
 #define DFA_DOT_FILE   "results/Parse_DFA.dot"
-#define PARSE_DFA_PNG_FILE "pcture/Parse_DFA.png"
+#define PARSE_DFA_PNG_FILE "picture/Parse_DFA.png"
 
 
-//´Ê·¨·ÖÎöÏà¹ØÎÄ¼şµØÖ·
+//è¯æ³•åˆ†æç›¸å…³æ–‡ä»¶åœ°å€
 #define TOKEN_LIST_FILE "results/Token_List.txt" 
 #define ERROR_LIST_FILE "error_log/Lexical_Error_List.txt"
 #define DFA_PNG_FILE    "picture/DFA.png"
 
 
-//ÎÄ·¨¶ÁÈëÏà¹ØÎÄ¼şµØÖ·
+//æ–‡æ³•è¯»å…¥ç›¸å…³æ–‡ä»¶åœ°å€
 #define GRAMMAR_ERROR_FILE "error_log/Grammar_Error_List.txt"
 #define EXTENDED_GRAMMAR_FILE "results/Extended_Grammar.txt"
 #define FIRST_SET_FILE "results/First_Set.txt"
 
 
-//¸öÈËĞŞ¸ÄÒ³Ãæ
+//ä¸ªäººä¿®æ”¹é¡µé¢
 class Show : public QMainWindow
 {
     Q_OBJECT
@@ -38,15 +38,15 @@ class Show : public QMainWindow
 public:
     Show(QWidget* parent = nullptr);
     ~Show();
-    void showToken();//Õ¹Ê¾´ÊÔª
-    void showDFA();//Õ¹Ê¾dfa
-    void showTable();//Õ¹Ê¾Action goto±í
-    void showTree(); //Õ¹Ê¾Óï·¨·ÖÎöÊ÷
-    void showProcess(); //Õ¹Ê¾¹éÔ¼¹ı³Ì
+    void showToken();//å±•ç¤ºè¯å…ƒ
+    void showDFA();//å±•ç¤ºdfa
+    void showTable();//å±•ç¤ºAction gotoè¡¨
+    void showTree(); //å±•ç¤ºè¯­æ³•åˆ†ææ ‘
+    void showProcess(); //å±•ç¤ºå½’çº¦è¿‡ç¨‹
     void showParseDFA();
 
 private:
-    Ui::ShowWindow* ui;                       // Ö÷Ò³Ãæ
+    Ui::ShowWindow* ui;                       // ä¸»é¡µé¢
     QVBoxLayout * layout;
 };
 
