@@ -1,0 +1,59 @@
+symbol name: return first set: return 
+symbol name: if first set: if 
+symbol name: else first set: else 
+symbol name: while first set: while 
+symbol name: void first set: void 
+symbol name: int first set: int 
+symbol name: <ID> first set: <ID> 
+symbol name: <INT> first set: <INT> 
+symbol name: ; first set: ; 
+symbol name: , first set: , 
+symbol name: ( first set: ( 
+symbol name: ) first set: ) 
+symbol name: { first set: { 
+symbol name: } first set: } 
+symbol name: + first set: + 
+symbol name: - first set: - 
+symbol name: * first set: * 
+symbol name: / first set: / 
+symbol name: = first set: = 
+symbol name: > first set: > 
+symbol name: < first set: < 
+symbol name: >= first set: >= 
+symbol name: <= first set: <= 
+symbol name: != first set: != 
+symbol name: == first set: == 
+symbol name: # first set: # 
+symbol name: S first set: @ void int 
+symbol name: Program first set: @ void int 
+symbol name: ExtDefList first set: @ void int 
+symbol name: ExtDef first set: void int 
+symbol name: VarSpecifier first set: int 
+symbol name: FunSpecifier first set: void int 
+symbol name: FunDec first set: <ID> 
+symbol name: Block first set: { 
+symbol name: CreateFunTable_m first set: @ 
+symbol name: VarList first set: @ int 
+symbol name: ParamDec first set: int 
+symbol name: DefList first set: @ int 
+symbol name: StmtList first set: @ return if while <ID> 
+symbol name: Def first set: int 
+symbol name: Stmt first set: return if while <ID> 
+symbol name: AssignStmt first set: <ID> 
+symbol name: ReturnStmt first set: return 
+symbol name: IfStmt first set: if 
+symbol name: WhileStmt first set: while 
+symbol name: CallStmt first set: <ID> 
+symbol name: Exp first set: <ID> <INT> ( 
+symbol name: AddSubExp first set: <ID> <INT> ( 
+symbol name: Relop first set: > < >= <= != == 
+symbol name: Item first set: <ID> <INT> ( 
+symbol name: Factor first set: <ID> <INT> ( 
+symbol name: CallFunCheck first set: @ 
+symbol name: Args first set: @ <ID> <INT> ( 
+symbol name: IfStmt_m1 first set: @ 
+symbol name: IfStmt_m2 first set: @ 
+symbol name: IfNext first set: @ else 
+symbol name: IfStmt_next first set: @ 
+symbol name: WhileStmt_m1 first set: @ 
+symbol name: WhileStmt_m2 first set: @ 
