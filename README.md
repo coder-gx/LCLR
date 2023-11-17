@@ -30,7 +30,7 @@ Graphviz安装说明：
 
 1.开始界面
 
-![image](https://github.com/coder-gx/LCLR/assets/105330548/9d9c6839-3547-49d0-941e-c786453cd4a3){:width=20%};
+![image]{:width=20%}(https://github.com/coder-gx/LCLR/assets/105330548/9d9c6839-3547-49d0-941e-c786453cd4a3);
 
 
 2.点击文件，导入源代码并且导入文法，此外源代码可以自己在文本框输入
