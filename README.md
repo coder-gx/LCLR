@@ -37,23 +37,23 @@ Graphviz安装说明：
 
 2.点击文件，导入源代码并且导入文法，此外源代码可以自己在文本框输入
 
-<img src="https://github.com/coder-gx/LCLR/assets/105330548/0de10f06-0b77-40ae-9230-4a309341b94e" alt="image1" width="50%">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/0de10f06-0b77-40ae-9230-4a309341b94e" alt="image1" style="width: 50%; height: 50%;">
 
-<img src="https://github.com/coder-gx/LCLR/assets/105330548/04f46684-000b-47e6-b1a6-729d4f1a6e93" alt="image2" width="50%">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/04f46684-000b-47e6-b1a6-729d4f1a6e93" alt="image2" style="width: 50%; height: 50%;">
 
 
 
 
 3.点击编译->开始编译，可以选择是否继续生成语法DFA
 
-<img src="https://github.com/coder-gx/LCLR/assets/105330548/ee43e576-b511-4dbb-8e7c-40c6f02cfe14" alt="image" width="50%">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/ee43e576-b511-4dbb-8e7c-40c6f02cfe14" alt="image" style="width: 50%; height: 50%;">
 
 
 
 4.可以进行错误定位
 
-<img src="https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500" alt="image1" width="50%">
-<img src="https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156" alt="image2" width="50%">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/e2096712-747c-4a9a-b78c-be057c32e500" alt="image1" style="width: 50%; height: 50%;">
+<img src="https://github.com/coder-gx/LCLR/assets/105330548/332e35a4-bdca-44ea-8bd8-258c7f3e8156" alt="image2" style="width: 50%; height: 50%;">
 
 
 
