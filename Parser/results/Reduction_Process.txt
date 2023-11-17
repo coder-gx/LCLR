@@ -1,0 +1,1852 @@
+STEP: 0
+STATUS_STACK:  0
+SYMBOL_STACK: #
+INPUT: intprogram(inta,intb,intc){inti;intj;i=0;if(a>(b+c)){j=a+(b*c+1);}else{j=a;}i=j*2;while(i<=100){i=i*2;}returni;}intdemo(inta){a=a+2;returna*2;}voidmain(){inta;a=1;intb;intc;a=3;b=4;c=2;a=program(a,b,demo(c));return;}#
+
+STEP: 1
+STATUS_STACK:  0 2
+STATUS_SYMBOL: #int
+INPUT: <ID>(int<ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 2
+STATUS_STACK:  0 7
+STATUS_SYMBOL: #FunSpecifier
+INPUT: <ID>(int<ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 3
+STATUS_STACK:  0 7 13
+STATUS_SYMBOL: #FunSpecifier<ID>
+INPUT: (int<ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 4
+STATUS_STACK:  0 7 13 18
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m
+INPUT: (int<ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 5
+STATUS_STACK:  0 7 13 18 43
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(
+INPUT: int<ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 6
+STATUS_STACK:  0 7 13 18 43 37
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(int
+INPUT: <ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 7
+STATUS_STACK:  0 7 13 18 43 87
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(VarSpecifier
+INPUT: <ID>,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 8
+STATUS_STACK:  0 7 13 18 43 87 138
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(VarSpecifier<ID>
+INPUT: ,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 9
+STATUS_STACK:  0 7 13 18 43 88
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec
+INPUT: ,int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 10
+STATUS_STACK:  0 7 13 18 43 88 139
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,
+INPUT: int<ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 11
+STATUS_STACK:  0 7 13 18 43 88 139 37
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,int
+INPUT: <ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 12
+STATUS_STACK:  0 7 13 18 43 88 139 87
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,VarSpecifier
+INPUT: <ID>,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 13
+STATUS_STACK:  0 7 13 18 43 88 139 87 138
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,VarSpecifier<ID>
+INPUT: ,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 14
+STATUS_STACK:  0 7 13 18 43 88 139 88
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec
+INPUT: ,int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 15
+STATUS_STACK:  0 7 13 18 43 88 139 88 139
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,
+INPUT: int<ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 16
+STATUS_STACK:  0 7 13 18 43 88 139 88 139 37
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,int
+INPUT: <ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 17
+STATUS_STACK:  0 7 13 18 43 88 139 88 139 87
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,VarSpecifier
+INPUT: <ID>){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 18
+STATUS_STACK:  0 7 13 18 43 88 139 88 139 87 138
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,VarSpecifier<ID>
+INPUT: ){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 19
+STATUS_STACK:  0 7 13 18 43 88 139 88 139 88
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,ParamDec
+INPUT: ){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 20
+STATUS_STACK:  0 7 13 18 43 88 139 88 139 206
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,ParamDec,VarList
+INPUT: ){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 21
+STATUS_STACK:  0 7 13 18 43 88 139 206
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(ParamDec,VarList
+INPUT: ){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 22
+STATUS_STACK:  0 7 13 18 43 86
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(VarList
+INPUT: ){int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 23
+STATUS_STACK:  0 7 13 18 43 86 137
+STATUS_SYMBOL: #FunSpecifier<ID>CreateFunTable_m(VarList)
+INPUT: {int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 24
+STATUS_STACK:  0 7 12
+STATUS_SYMBOL: #FunSpecifierFunDec
+INPUT: {int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 25
+STATUS_STACK:  0 7 12 17
+STATUS_SYMBOL: #FunSpecifierFunDec{
+INPUT: int<ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 26
+STATUS_STACK:  0 7 12 17 37
+STATUS_SYMBOL: #FunSpecifierFunDec{int
+INPUT: <ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 27
+STATUS_STACK:  0 7 12 17 31
+STATUS_SYMBOL: #FunSpecifierFunDec{VarSpecifier
+INPUT: <ID>;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 28
+STATUS_STACK:  0 7 12 17 31 69
+STATUS_SYMBOL: #FunSpecifierFunDec{VarSpecifier<ID>
+INPUT: ;int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 29
+STATUS_STACK:  0 7 12 17 31 69 124
+STATUS_SYMBOL: #FunSpecifierFunDec{VarSpecifier<ID>;
+INPUT: int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 30
+STATUS_STACK:  0 7 12 17 29
+STATUS_SYMBOL: #FunSpecifierFunDec{Def
+INPUT: int<ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 31
+STATUS_STACK:  0 7 12 17 29 37
+STATUS_SYMBOL: #FunSpecifierFunDec{Defint
+INPUT: <ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 32
+STATUS_STACK:  0 7 12 17 29 31
+STATUS_SYMBOL: #FunSpecifierFunDec{DefVarSpecifier
+INPUT: <ID>;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 33
+STATUS_STACK:  0 7 12 17 29 31 69
+STATUS_SYMBOL: #FunSpecifierFunDec{DefVarSpecifier<ID>
+INPUT: ;<ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 34
+STATUS_STACK:  0 7 12 17 29 31 69 124
+STATUS_SYMBOL: #FunSpecifierFunDec{DefVarSpecifier<ID>;
+INPUT: <ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 35
+STATUS_STACK:  0 7 12 17 29 29
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef
+INPUT: <ID>=<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 36
+STATUS_STACK:  0 7 12 17 29 29 39
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>
+INPUT: =<INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 37
+STATUS_STACK:  0 7 12 17 29 29 39 74
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=
+INPUT: <INT>;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 38
+STATUS_STACK:  0 7 12 17 29 29 39 74 81
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=<INT>
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 39
+STATUS_STACK:  0 7 12 17 29 29 39 74 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=Factor
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 40
+STATUS_STACK:  0 7 12 17 29 29 39 74 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=Item
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 41
+STATUS_STACK:  0 7 12 17 29 29 39 74 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=AddSubExp
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 42
+STATUS_STACK:  0 7 12 17 29 29 39 74 126
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDef<ID>=Exp
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 43
+STATUS_STACK:  0 7 12 17 29 29 33
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefAssignStmt
+INPUT: ;if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 44
+STATUS_STACK:  0 7 12 17 29 29 33 71
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefAssignStmt;
+INPUT: if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 45
+STATUS_STACK:  0 7 12 17 29 29 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmt
+INPUT: if(<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 46
+STATUS_STACK:  0 7 12 17 29 29 30 41
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtif
+INPUT: (<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 47
+STATUS_STACK:  0 7 12 17 29 29 30 41 84
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1
+INPUT: (<ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 48
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(
+INPUT: <ID>>(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 49
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 59
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(<ID>
+INPUT: >(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 50
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Factor
+INPUT: >(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 51
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Item
+INPUT: >(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 52
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 54
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(AddSubExp
+INPUT: >(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 53
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp
+INPUT: >(<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 54
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 46
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp>
+INPUT: (<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 55
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop
+INPUT: (<ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 56
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(
+INPUT: <ID>+<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 57
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 59
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(<ID>
+INPUT: +<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 58
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Factor
+INPUT: +<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 59
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Item
+INPUT: +<ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 60
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 56 103
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Item+
+INPUT: <ID>)){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 61
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 56 103 158
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Item+<ID>
+INPUT: )){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 62
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 56 103 154
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Item+Factor
+INPUT: )){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 63
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 56 103 153
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Item+Item
+INPUT: )){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 64
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 54
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(AddSubExp
+INPUT: )){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 65
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 102
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Exp
+INPUT: )){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 66
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 55 102 151
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelop(Exp)
+INPUT: ){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 67
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelopFactor
+INPUT: ){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 68
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelopItem
+INPUT: ){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 69
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 100 149
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(ExpRelopAddSubExp
+INPUT: ){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 70
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp
+INPUT: ){<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 71
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)
+INPUT: {<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 72
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2
+INPUT: {<ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 73
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{
+INPUT: <ID>=<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 74
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>
+INPUT: =<ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 75
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=
+INPUT: <ID>+(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 76
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 82
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=<ID>
+INPUT: +(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 77
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Factor
+INPUT: +(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 78
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item
+INPUT: +(<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 79
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+
+INPUT: (<ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 80
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(
+INPUT: <ID>*<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 81
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 59
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(<ID>
+INPUT: *<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 82
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Factor
+INPUT: *<ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 83
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 57 105
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Factor*
+INPUT: <ID>+<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 84
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 57 105 165
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Factor*<ID>
+INPUT: +<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 85
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 57 105 160
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Factor*Factor
+INPUT: +<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 86
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Item
+INPUT: +<INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 87
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 56 103
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Item+
+INPUT: <INT>);}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 88
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 56 103 156
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Item+<INT>
+INPUT: );}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 89
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 56 103 154
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Item+Factor
+INPUT: );}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 90
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 56 103 153
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Item+Item
+INPUT: );}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 91
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 54
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(AddSubExp
+INPUT: );}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 92
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 258
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Exp
+INPUT: );}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 93
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 188 258 313
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+(Exp)
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 94
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 190
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+Factor
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 95
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 79 130 189
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Item+Item
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 96
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=AddSubExp
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 97
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 39 74 126
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{<ID>=Exp
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 98
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 33
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{AssignStmt
+INPUT: ;}else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 99
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 33 71
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{AssignStmt;
+INPUT: }else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 100
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{Stmt
+INPUT: }else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 101
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{StmtList
+INPUT: }else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 102
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 392
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{List
+INPUT: }else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 103
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 361 392 406
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2{List}
+INPUT: else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 104
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2Block
+INPUT: else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 105
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_next
+INPUT: else{<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 106
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse
+INPUT: {<ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 107
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{
+INPUT: <ID>=<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 108
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>
+INPUT: =<ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 109
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=
+INPUT: <ID>;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 110
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74 82
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=<ID>
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 111
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=Factor
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 112
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=Item
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 113
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=AddSubExp
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 114
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 39 74 126
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{<ID>=Exp
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 115
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 33
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{AssignStmt
+INPUT: ;}<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 116
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 33 71
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{AssignStmt;
+INPUT: }<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 117
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{Stmt
+INPUT: }<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 118
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{StmtList
+INPUT: }<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 119
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 393
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{List
+INPUT: }<ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 120
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 363 393 407
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelse{List}
+INPUT: <ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 121
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 391 405 415
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfStmt_nextelseBlock
+INPUT: <ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 122
+STATUS_STACK:  0 7 12 17 29 29 30 41 84 135 204 265 325 360 390
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtifIfStmt_m1(Exp)IfStmt_m2BlockIfNext
+INPUT: <ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 123
+STATUS_STACK:  0 7 12 17 29 29 30 34
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtIfStmt
+INPUT: <ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 124
+STATUS_STACK:  0 7 12 17 29 29 30 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt
+INPUT: <ID>=<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 125
+STATUS_STACK:  0 7 12 17 29 29 30 30 39
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>
+INPUT: =<ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 126
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=
+INPUT: <ID>*<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 127
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 82
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=<ID>
+INPUT: *<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 128
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Factor
+INPUT: *<INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 129
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 80 132
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Factor*
+INPUT: <INT>;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 130
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 80 132 198
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Factor*<INT>
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 131
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 80 132 196
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Factor*Factor
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 132
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Item
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 133
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=AddSubExp
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 134
+STATUS_STACK:  0 7 12 17 29 29 30 30 39 74 126
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmt<ID>=Exp
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 135
+STATUS_STACK:  0 7 12 17 29 29 30 30 33
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtAssignStmt
+INPUT: ;while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 136
+STATUS_STACK:  0 7 12 17 29 29 30 30 33 71
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtAssignStmt;
+INPUT: while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 137
+STATUS_STACK:  0 7 12 17 29 29 30 30 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmt
+INPUT: while(<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 138
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhile
+INPUT: (<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 139
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1
+INPUT: (<ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 140
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(
+INPUT: <ID><=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 141
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 59
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(<ID>
+INPUT: <=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 142
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Factor
+INPUT: <=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 143
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Item
+INPUT: <=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 144
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 54
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(AddSubExp
+INPUT: <=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 145
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp
+INPUT: <=<INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 146
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 49
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp<=
+INPUT: <INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 147
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 100
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(ExpRelop
+INPUT: <INT>){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 148
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 100 58
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(ExpRelop<INT>
+INPUT: ){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 149
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 100 57
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(ExpRelopFactor
+INPUT: ){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 150
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 100 56
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(ExpRelopItem
+INPUT: ){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 151
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 100 149
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(ExpRelopAddSubExp
+INPUT: ){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 152
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp
+INPUT: ){<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 153
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)
+INPUT: {<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 154
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2
+INPUT: {<ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 155
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{
+INPUT: <ID>=<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 156
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>
+INPUT: =<ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 157
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=
+INPUT: <ID>*<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 158
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 82
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=<ID>
+INPUT: *<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 159
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Factor
+INPUT: *<INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 160
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 80 132
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Factor*
+INPUT: <INT>;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 161
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 80 132 198
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Factor*<INT>
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 162
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 80 132 196
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Factor*Factor
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 163
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Item
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 164
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=AddSubExp
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 165
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 39 74 126
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{<ID>=Exp
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 166
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 33
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{AssignStmt
+INPUT: ;}return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 167
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 33 71
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{AssignStmt;
+INPUT: }return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 168
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{Stmt
+INPUT: }return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 169
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{StmtList
+INPUT: }return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 170
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 393
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{List
+INPUT: }return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 171
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 363 393 407
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2{List}
+INPUT: return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 172
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 42 85 136 205 266 326 362
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtwhileWhileStmt_m1(Exp)WhileStmt_m2Block
+INPUT: return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 173
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 35
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtWhileStmt
+INPUT: return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 174
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmt
+INPUT: return<ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 175
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturn
+INPUT: <ID>;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 176
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40 82
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturn<ID>
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 177
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40 80
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturnFactor
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 178
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40 79
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturnItem
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 179
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40 77
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturnAddSubExp
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 180
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 40 76
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtreturnExp
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 181
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 32
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtReturnStmt
+INPUT: ;}int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 182
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 32 70
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtReturnStmt;
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 183
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 30
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtStmt
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 184
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtStmtList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 185
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtStmtList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 186
+STATUS_STACK:  0 7 12 17 29 29 30 30 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtStmtList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 187
+STATUS_STACK:  0 7 12 17 29 29 30 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtStmtList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 188
+STATUS_STACK:  0 7 12 17 29 29 30 68
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefStmtList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 189
+STATUS_STACK:  0 7 12 17 29 29 67
+STATUS_SYMBOL: #FunSpecifierFunDec{DefDefList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 190
+STATUS_STACK:  0 7 12 17 29 67
+STATUS_SYMBOL: #FunSpecifierFunDec{DefList
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 191
+STATUS_STACK:  0 7 12 17 28
+STATUS_SYMBOL: #FunSpecifierFunDec{List
+INPUT: }int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 192
+STATUS_STACK:  0 7 12 17 28 66
+STATUS_SYMBOL: #FunSpecifierFunDec{List}
+INPUT: int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 193
+STATUS_STACK:  0 7 12 16
+STATUS_SYMBOL: #FunSpecifierFunDecBlock
+INPUT: int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 194
+STATUS_STACK:  0 5
+STATUS_SYMBOL: #ExtDef
+INPUT: int<ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 195
+STATUS_STACK:  0 5 2
+STATUS_SYMBOL: #ExtDefint
+INPUT: <ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 196
+STATUS_STACK:  0 5 7
+STATUS_SYMBOL: #ExtDefFunSpecifier
+INPUT: <ID>(int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 197
+STATUS_STACK:  0 5 7 13
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>
+INPUT: (int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 198
+STATUS_STACK:  0 5 7 13 18
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m
+INPUT: (int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 199
+STATUS_STACK:  0 5 7 13 18 43
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(
+INPUT: int<ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 200
+STATUS_STACK:  0 5 7 13 18 43 37
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(int
+INPUT: <ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 201
+STATUS_STACK:  0 5 7 13 18 43 87
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(VarSpecifier
+INPUT: <ID>){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 202
+STATUS_STACK:  0 5 7 13 18 43 87 138
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(VarSpecifier<ID>
+INPUT: ){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 203
+STATUS_STACK:  0 5 7 13 18 43 88
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(ParamDec
+INPUT: ){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 204
+STATUS_STACK:  0 5 7 13 18 43 86
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(VarList
+INPUT: ){<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 205
+STATUS_STACK:  0 5 7 13 18 43 86 137
+STATUS_SYMBOL: #ExtDefFunSpecifier<ID>CreateFunTable_m(VarList)
+INPUT: {<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 206
+STATUS_STACK:  0 5 7 12
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec
+INPUT: {<ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 207
+STATUS_STACK:  0 5 7 12 17
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{
+INPUT: <ID>=<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 208
+STATUS_STACK:  0 5 7 12 17 39
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>
+INPUT: =<ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 209
+STATUS_STACK:  0 5 7 12 17 39 74
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=
+INPUT: <ID>+<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 210
+STATUS_STACK:  0 5 7 12 17 39 74 82
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=<ID>
+INPUT: +<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 211
+STATUS_STACK:  0 5 7 12 17 39 74 80
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Factor
+INPUT: +<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 212
+STATUS_STACK:  0 5 7 12 17 39 74 79
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Item
+INPUT: +<INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 213
+STATUS_STACK:  0 5 7 12 17 39 74 79 130
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Item+
+INPUT: <INT>;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 214
+STATUS_STACK:  0 5 7 12 17 39 74 79 130 192
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Item+<INT>
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 215
+STATUS_STACK:  0 5 7 12 17 39 74 79 130 190
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Item+Factor
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 216
+STATUS_STACK:  0 5 7 12 17 39 74 79 130 189
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Item+Item
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 217
+STATUS_STACK:  0 5 7 12 17 39 74 77
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=AddSubExp
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 218
+STATUS_STACK:  0 5 7 12 17 39 74 126
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{<ID>=Exp
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 219
+STATUS_STACK:  0 5 7 12 17 33
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{AssignStmt
+INPUT: ;return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 220
+STATUS_STACK:  0 5 7 12 17 33 71
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{AssignStmt;
+INPUT: return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 221
+STATUS_STACK:  0 5 7 12 17 30
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{Stmt
+INPUT: return<ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 222
+STATUS_STACK:  0 5 7 12 17 30 40
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{Stmtreturn
+INPUT: <ID>*<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 223
+STATUS_STACK:  0 5 7 12 17 30 40 82
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{Stmtreturn<ID>
+INPUT: *<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 224
+STATUS_STACK:  0 5 7 12 17 30 40 80
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnFactor
+INPUT: *<INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 225
+STATUS_STACK:  0 5 7 12 17 30 40 80 132
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnFactor*
+INPUT: <INT>;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 226
+STATUS_STACK:  0 5 7 12 17 30 40 80 132 198
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnFactor*<INT>
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 227
+STATUS_STACK:  0 5 7 12 17 30 40 80 132 196
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnFactor*Factor
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 228
+STATUS_STACK:  0 5 7 12 17 30 40 79
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnItem
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 229
+STATUS_STACK:  0 5 7 12 17 30 40 77
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnAddSubExp
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 230
+STATUS_STACK:  0 5 7 12 17 30 40 76
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtreturnExp
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 231
+STATUS_STACK:  0 5 7 12 17 30 32
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtReturnStmt
+INPUT: ;}void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 232
+STATUS_STACK:  0 5 7 12 17 30 32 70
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtReturnStmt;
+INPUT: }void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 233
+STATUS_STACK:  0 5 7 12 17 30 30
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtStmt
+INPUT: }void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 234
+STATUS_STACK:  0 5 7 12 17 30 30 68
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtStmtList
+INPUT: }void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 235
+STATUS_STACK:  0 5 7 12 17 30 68
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{StmtList
+INPUT: }void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 236
+STATUS_STACK:  0 5 7 12 17 28
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{List
+INPUT: }void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 237
+STATUS_STACK:  0 5 7 12 17 28 66
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDec{List}
+INPUT: void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 238
+STATUS_STACK:  0 5 7 12 16
+STATUS_SYMBOL: #ExtDefFunSpecifierFunDecBlock
+INPUT: void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 239
+STATUS_STACK:  0 5 5
+STATUS_SYMBOL: #ExtDefExtDef
+INPUT: void<ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 240
+STATUS_STACK:  0 5 5 8
+STATUS_SYMBOL: #ExtDefExtDefvoid
+INPUT: <ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 241
+STATUS_STACK:  0 5 5 7
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier
+INPUT: <ID>(){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 242
+STATUS_STACK:  0 5 5 7 13
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier<ID>
+INPUT: (){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 243
+STATUS_STACK:  0 5 5 7 13 18
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier<ID>CreateFunTable_m
+INPUT: (){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 244
+STATUS_STACK:  0 5 5 7 13 18 43
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier<ID>CreateFunTable_m(
+INPUT: ){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 245
+STATUS_STACK:  0 5 5 7 13 18 43 86
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier<ID>CreateFunTable_m(VarList
+INPUT: ){int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 246
+STATUS_STACK:  0 5 5 7 13 18 43 86 137
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifier<ID>CreateFunTable_m(VarList)
+INPUT: {int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 247
+STATUS_STACK:  0 5 5 7 12
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec
+INPUT: {int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 248
+STATUS_STACK:  0 5 5 7 12 17
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{
+INPUT: int<ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 249
+STATUS_STACK:  0 5 5 7 12 17 37
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{int
+INPUT: <ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 250
+STATUS_STACK:  0 5 5 7 12 17 31
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{VarSpecifier
+INPUT: <ID>;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 251
+STATUS_STACK:  0 5 5 7 12 17 31 69
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{VarSpecifier<ID>
+INPUT: ;<ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 252
+STATUS_STACK:  0 5 5 7 12 17 31 69 124
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{VarSpecifier<ID>;
+INPUT: <ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 253
+STATUS_STACK:  0 5 5 7 12 17 29
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def
+INPUT: <ID>=<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 254
+STATUS_STACK:  0 5 5 7 12 17 29 39
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>
+INPUT: =<INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 255
+STATUS_STACK:  0 5 5 7 12 17 29 39 74
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=
+INPUT: <INT>;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 256
+STATUS_STACK:  0 5 5 7 12 17 29 39 74 81
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=<INT>
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 257
+STATUS_STACK:  0 5 5 7 12 17 29 39 74 80
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=Factor
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 258
+STATUS_STACK:  0 5 5 7 12 17 29 39 74 79
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=Item
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 259
+STATUS_STACK:  0 5 5 7 12 17 29 39 74 77
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=AddSubExp
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 260
+STATUS_STACK:  0 5 5 7 12 17 29 39 74 126
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{Def<ID>=Exp
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 261
+STATUS_STACK:  0 5 5 7 12 17 29 33
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefAssignStmt
+INPUT: ;int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 262
+STATUS_STACK:  0 5 5 7 12 17 29 33 71
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefAssignStmt;
+INPUT: int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 263
+STATUS_STACK:  0 5 5 7 12 17 29 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmt
+INPUT: int<ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 264
+STATUS_STACK:  0 5 5 7 12 17 29 30 37
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtint
+INPUT: <ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 265
+STATUS_STACK:  0 5 5 7 12 17 29 30 31
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtVarSpecifier
+INPUT: <ID>;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 266
+STATUS_STACK:  0 5 5 7 12 17 29 30 31 69
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtVarSpecifier<ID>
+INPUT: ;int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 267
+STATUS_STACK:  0 5 5 7 12 17 29 30 31 69 124
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtVarSpecifier<ID>;
+INPUT: int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 268
+STATUS_STACK:  0 5 5 7 12 17 29 30 29
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDef
+INPUT: int<ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 269
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 37
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefint
+INPUT: <ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 270
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 31
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefVarSpecifier
+INPUT: <ID>;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 271
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 31 69
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefVarSpecifier<ID>
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 272
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 31 69 124
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefVarSpecifier<ID>;
+INPUT: <ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 273
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef
+INPUT: <ID>=<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 274
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>
+INPUT: =<INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 275
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=
+INPUT: <INT>;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 276
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74 81
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=<INT>
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 277
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74 80
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=Factor
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 278
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74 79
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=Item
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 279
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74 77
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=AddSubExp
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 280
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 39 74 126
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDef<ID>=Exp
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 281
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 33
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefAssignStmt
+INPUT: ;<ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 282
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 33 71
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefAssignStmt;
+INPUT: <ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 283
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt
+INPUT: <ID>=<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 284
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>
+INPUT: =<INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 285
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=
+INPUT: <INT>;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 286
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74 81
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=<INT>
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 287
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74 80
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=Factor
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 288
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74 79
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=Item
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 289
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74 77
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=AddSubExp
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 290
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 39 74 126
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmt<ID>=Exp
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 291
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 33
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtAssignStmt
+INPUT: ;<ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 292
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 33 71
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtAssignStmt;
+INPUT: <ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 293
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt
+INPUT: <ID>=<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 294
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>
+INPUT: =<INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 295
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=
+INPUT: <INT>;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 296
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74 81
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=<INT>
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 297
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74 80
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=Factor
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 298
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74 79
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=Item
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 299
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74 77
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=AddSubExp
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 300
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 39 74 126
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmt<ID>=Exp
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 301
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 33
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtAssignStmt
+INPUT: ;<ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 302
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 33 71
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtAssignStmt;
+INPUT: <ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 303
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt
+INPUT: <ID>=<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 304
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>
+INPUT: =<ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 305
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=
+INPUT: <ID>(<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 306
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>
+INPUT: (<ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 307
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(
+INPUT: <ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 308
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheck
+INPUT: <ID>,<ID>,<ID>(<ID>));return;}#
+
+STEP: 309
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 182
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheck<ID>
+INPUT: ,<ID>,<ID>(<ID>));return;}#
+
+STEP: 310
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 180
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckFactor
+INPUT: ,<ID>,<ID>(<ID>));return;}#
+
+STEP: 311
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 179
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckItem
+INPUT: ,<ID>,<ID>(<ID>));return;}#
+
+STEP: 312
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 177
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckAddSubExp
+INPUT: ,<ID>,<ID>(<ID>));return;}#
+
+STEP: 313
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp
+INPUT: ,<ID>,<ID>(<ID>));return;}#
+
+STEP: 314
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,
+INPUT: <ID>,<ID>(<ID>));return;}#
+
+STEP: 315
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 182
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,<ID>
+INPUT: ,<ID>(<ID>));return;}#
+
+STEP: 316
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 180
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Factor
+INPUT: ,<ID>(<ID>));return;}#
+
+STEP: 317
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 179
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Item
+INPUT: ,<ID>(<ID>));return;}#
+
+STEP: 318
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 177
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,AddSubExp
+INPUT: ,<ID>(<ID>));return;}#
+
+STEP: 319
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp
+INPUT: ,<ID>(<ID>));return;}#
+
+STEP: 320
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,
+INPUT: <ID>(<ID>));return;}#
+
+STEP: 321
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>
+INPUT: (<ID>));return;}#
+
+STEP: 322
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(
+INPUT: <ID>));return;}#
+
+STEP: 323
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheck
+INPUT: <ID>));return;}#
+
+STEP: 324
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 182
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheck<ID>
+INPUT: ));return;}#
+
+STEP: 325
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 180
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckFactor
+INPUT: ));return;}#
+
+STEP: 326
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 179
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckItem
+INPUT: ));return;}#
+
+STEP: 327
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 177
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckAddSubExp
+INPUT: ));return;}#
+
+STEP: 328
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 176
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckExp
+INPUT: ));return;}#
+
+STEP: 329
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 355
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckArgs
+INPUT: ));return;}#
+
+STEP: 330
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 182 255 311 355 385
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,<ID>(CallFunCheckArgs)
+INPUT: );return;}#
+
+STEP: 331
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 183
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,CallStmt
+INPUT: );return;}#
+
+STEP: 332
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 180
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,Factor
+INPUT: );return;}#
+
+STEP: 333
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 179
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,Item
+INPUT: );return;}#
+
+STEP: 334
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 177
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,AddSubExp
+INPUT: );return;}#
+
+STEP: 335
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 176
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,Exp
+INPUT: );return;}#
+
+STEP: 336
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 176 248 293
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Exp,Args
+INPUT: );return;}#
+
+STEP: 337
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 176 248 293
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckExp,Args
+INPUT: );return;}#
+
+STEP: 338
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 264
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckArgs
+INPUT: );return;}#
+
+STEP: 339
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 82 134 203 264 324
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=<ID>(CallFunCheckArgs)
+INPUT: ;return;}#
+
+STEP: 340
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 83
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=CallStmt
+INPUT: ;return;}#
+
+STEP: 341
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 80
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=Factor
+INPUT: ;return;}#
+
+STEP: 342
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 79
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=Item
+INPUT: ;return;}#
+
+STEP: 343
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 77
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=AddSubExp
+INPUT: ;return;}#
+
+STEP: 344
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 39 74 126
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmt<ID>=Exp
+INPUT: ;return;}#
+
+STEP: 345
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 33
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtAssignStmt
+INPUT: ;return;}#
+
+STEP: 346
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 33 71
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtAssignStmt;
+INPUT: return;}#
+
+STEP: 347
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmt
+INPUT: return;}#
+
+STEP: 348
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 40
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtreturn
+INPUT: ;}#
+
+STEP: 349
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 32
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtReturnStmt
+INPUT: ;}#
+
+STEP: 350
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 32 70
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtReturnStmt;
+INPUT: }#
+
+STEP: 351
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 30
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtStmt
+INPUT: }#
+
+STEP: 352
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtStmtList
+INPUT: }#
+
+STEP: 353
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtStmtList
+INPUT: }#
+
+STEP: 354
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtStmtList
+INPUT: }#
+
+STEP: 355
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtStmtList
+INPUT: }#
+
+STEP: 356
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefStmtList
+INPUT: }#
+
+STEP: 357
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 29 67
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefDefList
+INPUT: }#
+
+STEP: 358
+STATUS_STACK:  0 5 5 7 12 17 29 30 29 67
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtDefList
+INPUT: }#
+
+STEP: 359
+STATUS_STACK:  0 5 5 7 12 17 29 30 68
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefStmtList
+INPUT: }#
+
+STEP: 360
+STATUS_STACK:  0 5 5 7 12 17 29 67
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{DefList
+INPUT: }#
+
+STEP: 361
+STATUS_STACK:  0 5 5 7 12 17 28
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{List
+INPUT: }#
+
+STEP: 362
+STATUS_STACK:  0 5 5 7 12 17 28 66
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDec{List}
+INPUT: #
+
+STEP: 363
+STATUS_STACK:  0 5 5 7 12 16
+STATUS_SYMBOL: #ExtDefExtDefFunSpecifierFunDecBlock
+INPUT: #
+
+STEP: 364
+STATUS_STACK:  0 5 5 5
+STATUS_SYMBOL: #ExtDefExtDefExtDef
+INPUT: #
+
+STEP: 365
+STATUS_STACK:  0 5 5 5 9
+STATUS_SYMBOL: #ExtDefExtDefExtDefExtDefList
+INPUT: #
+
+STEP: 366
+STATUS_STACK:  0 5 5 9
+STATUS_SYMBOL: #ExtDefExtDefExtDefList
+INPUT: #
+
+STEP: 367
+STATUS_STACK:  0 5 9
+STATUS_SYMBOL: #ExtDefExtDefList
+INPUT: #
+
+STEP: 368
+STATUS_STACK:  0 4
+STATUS_SYMBOL: #ExtDefList
+INPUT: #
+
+STEP: 369
+STATUS_STACK:  0 3
+STATUS_SYMBOL: #Program
+INPUT: #
+
+
+Parse successfully!
