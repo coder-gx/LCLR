@@ -1,4 +1,4 @@
-# LCLR——Light Compiler based on LR(1) Method
+# Light Compiler based on LR(1) Method
 
 ## 简介
 
