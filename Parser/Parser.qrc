@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Parser">
+        <file>picture/icon.png</file>
+        <file>picture/loading.png</file>
+    </qresource>
+</RCC>
