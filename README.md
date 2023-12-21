@@ -1,7 +1,9 @@
 # Light Compiler based on LR(1) Method
 
 
-[新建了中间代码(四元式)生成器分支](https://github.com/coder-gx/Light-Compiler-based-on-LR1-method/tree/semantic)
+## News
+🤗🤗🤗[新建了中间代码(四元式)生成器分支](https://github.com/coder-gx/Light-Compiler-based-on-LR1-method/tree/semantic)
+
 
 
 ## 简介
