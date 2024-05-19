@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/myCompiler">
+        <file>picture/icon.png</file>
+        <file>picture/loading.png</file>
+    </qresource>
+</RCC>
